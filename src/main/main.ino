@@ -1,8 +1,11 @@
+#include "sensors.h"
+
 void setup() {
     Serial.begin(115200);
+    initSensors();
 }
 
 void loop() {
-    Serial.println("Mustang System Running...");
+    readSensors();
     delay(1000);
 }
